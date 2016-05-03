@@ -9,20 +9,57 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.iappsmini.hello.MainActivity">
 
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView">
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btn_Login"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name:"
+        android:id="@+id/textView"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="46dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:id="@+id/textView2"
+        android:layout_marginBottom="32dp"
+        android:layout_above="@+id/btn_Login"
+        android:layout_alignStart="@+id/btn_Login" />
+
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:id="@+id/txt_Hello"
-        android:layout_alignTop="@+id/btn_Hello"
-        android:layout_toEndOf="@+id/btn_Hello"
-        android:layout_marginStart="28dp" />
+        android:id="@+id/txt_UserName"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignEnd="@+id/btn_Login" />
 
-    <Button
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Hello"
-        android:id="@+id/btn_Hello"
-        android:layout_marginTop="133dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/txt_Password"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/txt_UserName"
+        android:password="false" />
+
 </RelativeLayout>
